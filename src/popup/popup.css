@@ -1,0 +1,168 @@
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #172033;
+  --muted: #6b7280;
+  --blue: #536186;
+  --blue-hover: #46527a;
+  --green: #188038;
+  --green-bg: #e6f4ea;
+  --orange: #f29900;
+  --orange-bg: #fff4e5;
+  --red: #d93025;
+  --red-bg: #fde8e7;
+  --border: #e0e4ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 360px;
+  min-height: 460px;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  padding: 16px;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(23, 32, 51, 0.08);
+  margin-bottom: 14px;
+}
+
+.card-safe {
+  background: var(--green-bg);
+  border-color: rgba(24, 128, 56, 0.25);
+}
+
+.card-warning {
+  background: var(--orange-bg);
+  border-color: rgba(242, 153, 0, 0.3);
+}
+
+.card-danger {
+  background: var(--red-bg);
+  border-color: rgba(217, 48, 37, 0.25);
+}
+
+.card-neutral {
+  background: var(--card);
+}
+
+.status-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.probability {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 6px;
+}
+
+.risk {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.url-box {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.url {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  max-height: 72px;
+  overflow: auto;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  background: var(--blue);
+  color: #fff;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: var(--blue-hover);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.error {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--red-bg);
+  color: var(--red);
+  font-size: 13px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}

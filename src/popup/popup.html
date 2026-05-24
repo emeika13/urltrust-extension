@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>URLTrust</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <img src="../icons/icon28.png" alt="URLTrust" class="logo" />
+        <div>
+          <h1>URLTrust</h1>
+          <p>Проверка фишинговых сайтов</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="statusCard" class="card card-neutral">
+        <div class="status-title" id="verdict">Проверка...</div>
+        <div class="probability" id="probability">—</div>
+        <div class="risk" id="riskLevel">Ожидание результата</div>
+      </section>
+
+      <section class="url-box">
+        <div class="label">Текущий URL</div>
+        <div class="url" id="currentUrl">—</div>
+      </section>
+
+      <button id="checkButton" class="button">Проверить сайт</button>
+
+      <div id="errorBox" class="error hidden"></div>
+    </main>
+
+    <footer>
+      <span id="checkedAt">URLTrust ML Detector</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "URLTrust",
+  "version": "1.0.0",
+  "description": "Расширение для выявления фишинговых веб-ресурсов на основе ML-модели.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "http://127.0.0.1:8000/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "action": {
+    "default_title": "URLTrust",
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "src/icons/icon16.png",
+      "28": "src/icons/icon28.png",
+      "128": "src/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "src/icons/icon16.png",
+    "28": "src/icons/icon28.png",
+    "128": "src/icons/icon128.png"
+  }
+}
