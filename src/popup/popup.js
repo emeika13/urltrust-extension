@@ -1,7 +1,7 @@
 // Белый список доменов
 const TRUSTED_DOMAINS = [
     "google.com", "github.com", "yandex.ru", "microsoft.com",
-    "wikipedia.org", "vk.com", "samsung.com"
+    "wikipedia.org", "vk.com", "samsung.com", "chatgpt.com", "openai.com"
 ];
 
 function getCleanUrl(fullUrl) {

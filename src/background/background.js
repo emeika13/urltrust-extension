@@ -1,3 +1,4 @@
+// Backend API URL. Backend должен быть запущен на localhost:8000
 const API_URL = "http://localhost:8000/check";
 
 // Белый список доменов, для которых очищаем всё, кроме домена
